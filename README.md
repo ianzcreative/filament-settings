@@ -38,7 +38,7 @@ class FilamentPanelProvider extends PanelProvider
 
 ## Usage
 
-Create a settings page at 'app/Filament/Pages/Settings/Settings.php':
+Create a settings page at 'app/Filament/Pages/Settings.php':
 
 ```php
 namespace App\Filament\Pages\Settings;
@@ -87,7 +87,7 @@ class FilamentPanelProvider extends PanelProvider
             ->plugins([
                 FilamentSettingsPlugin::make()
                     ->pages([
-                        App\Filament\Pages\Settings\Settings::class,
+                        App\Filament\Pages\Settings::class,
                     ])
             ]);
     }
@@ -136,9 +136,6 @@ class Settings extends BaseSettings
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
-## Credits
-
-- [All Contributors](../../contributors)
 
 ## License
 
